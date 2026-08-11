@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gopinath Munduri - ATMS & TMS, Network and Systems professional resume">
+<title>Gopinath Munduri | ATMS & TMS Professional</title>
+<style>
+:root{
+  --ink:#172235; --navy:#0b1d35; --blue:#1769aa; --sky:#eaf4fc;
+  --paper:#ffffff; --bg:#eef2f7; --muted:#64748b; --line:#d9e2ec;
+  --gold:#c18a2b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.62}
+a{color:inherit}
+.page{max-width:1180px;margin:28px auto;background:var(--paper);box-shadow:0 12px 45px rgba(15,35,60,.13)}
+.header{background:linear-gradient(135deg,#08192e,#0e4f83);color:#fff;padding:42px 48px}
+.header-grid{display:grid;grid-template-columns:155px 1fr;gap:32px;align-items:center}
+.photo{width:155px;height:185px;object-fit:cover;background:#fff;border:5px solid #fff;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.name{font-size:42px;line-height:1.1;margin:0 0 8px;letter-spacing:.3px}
+.title{font-size:20px;color:#dceeff;margin:0 0 20px;font-weight:600}
+.badges{display:flex;flex-wrap:wrap;gap:9px}
+.badge{padding:7px 12px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);border-radius:30px;font-size:13px}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.contact a{text-decoration:none;background:#fff;color:var(--navy);padding:8px 12px;border-radius:6px;font-weight:700;font-size:13px}
+.nav{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1180px;margin:auto;display:flex;gap:25px;padding:12px 30px;overflow:auto}
+.nav a{text-decoration:none;color:var(--navy);font-size:13px;font-weight:700;white-space:nowrap}
+.content{display:grid;grid-template-columns:300px 1fr}
+.sidebar{background:#f7f9fc;border-right:1px solid var(--line);padding:30px}
+.main{padding:34px 40px}
+h2{font-size:20px;color:var(--navy);margin:0 0 16px;padding-bottom:9px;border-bottom:2px solid var(--blue)}
+h3{color:var(--navy);margin:0 0 4px;font-size:17px}
+.side-section{margin-bottom:30px}
+.side-section:last-child{margin-bottom:0}
+.side-section p{margin:6px 0;font-size:13px}
+.side-label{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--blue);font-weight:800}
+.summary{font-size:15px;color:#34445a}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0 30px}
+.metric{background:var(--sky);border:1px solid #d6e8f7;border-radius:10px;padding:15px;text-align:center}
+.metric strong{display:block;font-size:24px;color:var(--blue)}
+.metric span{display:block;font-size:11px;color:var(--muted);font-weight:700;margin-top:2px}
+.job{position:relative;padding:0 0 25px 22px;margin:0 0 25px;border-left:3px solid #b8d5eb}
+.job:last-child{margin-bottom:0}
+.job:before{content:"";position:absolute;left:-8px;top:2px;width:11px;height:11px;background:var(--blue);border:3px solid #fff;border-radius:50%;box-shadow:0 0 0 1px #b8d5eb}
+.job-title{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}
+.period{white-space:nowrap;background:#f0f6fb;color:var(--blue);border-radius:20px;padding:5px 10px;font-size:11px;font-weight:800}
+.company{font-weight:700;color:var(--blue);font-size:13px;margin:2px 0 8px}
+.project{font-size:13px;color:var(--muted);margin:0 0 8px}
+ul{margin:8px 0 0;padding-left:20px}
+li{margin:4px 0;font-size:13px}
+.skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.skill{padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.skill strong{display:block;font-size:12px;color:var(--navy);margin-bottom:3px}
+.skill span{font-size:12px;color:var(--muted)}
+.scope{background:linear-gradient(135deg,#f5faff,#fff);border:1px solid #d8e8f5;border-radius:12px;padding:20px;margin-bottom:25px}
+.scope h3{color:var(--blue);margin-bottom:8px}
+.scope-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.scope-item{background:#fff;border:1px solid var(--line);padding:11px;border-radius:8px;font-size:12px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#eef5fb;color:var(--navy)}
+.declaration{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:15px}
+footer{text-align:center;padding:22px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+@media(max-width:850px){
+  .page{margin:0;box-shadow:none}
+  .header{padding:30px 22px}
+  .header-grid{grid-template-columns:1fr;text-align:center}
+  .photo{margin:auto;width:140px;height:165px}
+  .badges,.contact{justify-content:center}
+  .name{font-size:34px}
+  .content{grid-template-columns:1fr}
+  .sidebar{border-right:0;border-bottom:1px solid var(--line)}
+  .main{padding:28px 22px}
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .scope-grid,.skill-grid{grid-template-columns:1fr}
+  .job-title{flex-direction:column}
+}
+@media print{
+  body{background:#fff}
+  .page{margin:0;box-shadow:none}
+  .nav{display:none}
+}
+
+.resume-download{
+  background:linear-gradient(135deg,#2563eb,#7c3aed)!important;
+  color:#fff!important;
+  border:0!important;
+  box-shadow:0 8px 18px rgba(37,99,235,.25);
+}
+.resume-download:hover{transform:translateY(-1px)}
+
+.hero-role{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px 0 22px}
+.hero-role strong{font-size:1.05rem;color:#172033;background:#eaf4ff;border:1px solid #c9def6;padding:9px 14px;border-radius:10px}
+.hero-role span{font-size:.8rem;color:#647084;font-weight:700}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="header" id="top">
+  <div class="header-grid">
+    <img class="photo" src="profile.jpg" alt="Gopinath Munduri">
+    <div>
+      <h1 class="name">Gopinath Munduri</h1>
+      <p class="title">ATMS &amp; TMS Professional | Network &amp; Systems Administration</p>
+      <div class="badges">
+        <span class="badge">12+ Years Experience</span>
+        <span class="badge">NHAI Projects</span>
+        <span class="badge">ATMS / TMS</span>
+        <span class="badge">Network &amp; OFC</span>
+        <span class="badge">Toll Operations</span>
+      </div>
+      <div class="contact">
+        <a href="tel:+918790991112">☎ +91-8790991112</a>
+        <a href="mailto:mundurign@gmail.com">✉ mundurign@gmail.com</a>
+        <a class="resume-download" href="Gopinath-Munduri-Resume.pdf" target="_blank" download>⬇ Download Resume</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#profile">PROFILE</a>
+    <a href="Gopinath-Munduri-Resume.pdf" target="_blank" download>DOWNLOAD RESUME</a>
+    <a href="#scope">ASSISTANT MANAGER SCOPE</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#education">EDUCATION</a>
+    <a href="#personal">PERSONAL</a>
+  </div>
+</nav>
+
+<div class="content">
+<aside class="sidebar">
+  <div class="side-section">
+    <div class="side-label">Professional Focus</div>
+    <p><strong>ATMS &amp; TMS Operations</strong></p>
+    <p>System monitoring, maintenance, SLA/DLP and IE compliance.</p>
+    <p><strong>Network &amp; Infrastructure</strong></p>
+    <p>OFC, LAN/WAN, ISP, firewall and network troubleshooting.</p>
+    <p><strong>Project Support</strong></p>
+    <p>AMC, spares, reporting, insurance claims and vendor coordination.</p>
+  </div>
+  <div class="side-section">
+    <div class="side-label">Core ATMS Equipment</div>
+    <p>VMS • VASD • CCTV • VIDS</p>
+    <p>ECB • MRCS • MET • TTES</p>
+    <p>ATCC • PTZ • RSU • UPS</p>
+  </div>
+  <div class="side-section">
+    <div class="side-label">Languages</div>
+    <p>Telugu</p><p>Hindi</p><p>English</p>
+  </div>
+  <div class="side-section">
+    <div class="side-label">Personal</div>
+    <p><strong>DOB:</strong> 07 November 1987</p>
+    <p><strong>Nationality:</strong> Indian</p>
+    <p><strong>Place:</strong> Rajahmundry</p>
+  </div>
+</aside>
+
+<main class="main">
+<section id="profile">
+  <h2>Professional Profile</h2>
+  <p class="summary">12+ years of experience in Toll Operations, ATMS, TMS, Network &amp; System Administration. Expertise in OFC, LAN/WAN, ISP Management and Network Troubleshooting, with strong experience in ATMS equipment, preventive and corrective maintenance, SLA/DLP compliance, project management, AMC, spare inventory, insurance claim management, IE compliance, documentation and technical reporting.</p>
+  
+</section>
+
+<section id="scope">
+  <h2>Assistant Manager – ATMS &amp; TMS | Role Scope &amp; Parameters</h2>
+  <div class="scope">
+    <h3>Management &amp; Technical Responsibility</h3>
+    <p class="summary">The following scope is positioned for an Assistant Manager-level ATMS/TMS profile, based on the responsibilities and technical experience documented in the resume.</p>
+    <div class="scope-grid">
+      <div class="scope-item"><strong>Operations:</strong><br>ATMS/TMS monitoring and toll-system availability</div>
+      <div class="scope-item"><strong>Maintenance:</strong><br>Preventive &amp; corrective maintenance control</div>
+      <div class="scope-item"><strong>SLA / DLP:</strong><br>Compliance monitoring and closure tracking</div>
+      <div class="scope-item"><strong>Network:</strong><br>OFC, LAN/WAN, GSM, ISP &amp; firewall management</div>
+      <div class="scope-item"><strong>Team / Vendor:</strong><br>Coordination with site teams, vendors and system providers</div>
+      <div class="scope-item"><strong>Compliance:</strong><br>IE compliance, documentation and technical reporting</div>
+      <div class="scope-item"><strong>Project:</strong><br>ATMS/TMS project implementation and management support</div>
+      <div class="scope-item"><strong>Assets:</strong><br>Spare inventory, AMC and equipment fault register</div>
+      <div class="scope-item"><strong>Claims:</strong><br>Insurance documentation, evidence, estimates and coordination</div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+<h2>Professional Experience</h2>
+
+<div class="job">
+  <div class="job-title"><div><h3>Sr Engineer – Systems</h3><div class="company">Safeway Concessions (Macquarie Group) | Client: NHAI</div></div><span class="period">Aug 2022 – Till Date</span></div>
+  <p class="project"><strong>Project:</strong> Siddantham Tollway Pvt. Ltd. – Siddhantham to Gundugolanu, NH16, Andhra Pradesh (Km 950+542 to Km 1022+494).</p>
+  <ul>
+    <li>Manage more than 250 ATMS networking devices using OFC (24/6 core) and GSM networks over approximately 72 km.</li>
+    <li>Monitor VMS, VASD, CCTV, VIDS with flash lights, ECB, MRCS, MET, TTES and ATCC.</li>
+    <li>Implement SLA and DLP requirements and coordinate AMC renewal.</li>
+    <li>Support ATMS/TMS project management, spare management and IE compliance.</li>
+    <li>Prepare daily, weekly and monthly reports and dashboards.</li>
+    <li>Manage firewall and ISP activities and system security.</li>
+    <li>Coordinate insurance claims for damaged, accident-affected, stolen and faulty equipment.</li>
+    <li>Monitor preventive/corrective maintenance and maintain the system/equipment fault register.</li>
+    <li>Manage stabilizers, DG sets, panel boards, RSU and UPS equipment.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-title"><div><h3>ATMS &amp; TMS Engineer</h3><div class="company">L.N. Malviya Infra Projects Pvt. Ltd. | Client: NHAI</div></div><span class="period">Jul 2019 – Jul 2022</span></div>
+  <p class="project"><strong>Project:</strong> IE Package-2, Annavaram–Diwancheruvu and Anakapalli–Annavaram (Tuni) sections, Andhra Pradesh.</p>
+  <ul>
+    <li>Reviewed ETC/TMS measures and operational requirements during O&amp;M.</li>
+    <li>Checked equipment functioning, failures, staff awareness/training and insurance coverage.</li>
+    <li>Supervised ETC &amp; TMS equipment audit/inspection once every quarter and prepared reports.</li>
+    <li>Monitored maintenance, implementation and troubleshooting of ATMS/TMS systems.</li>
+    <li>Implemented ATCC, TTES, ECB, VASD, VMS, CCTV, PTZ and VIDS hardware/software deployment.</li>
+    <li>Implemented site maintenance plans and coordinated with ATMS system providers.</li>
+    <li>Monitored hybrid ETC lanes.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-title"><div><h3>Support Engineer (ETC)</h3><div class="company">KENT Intelligent Transportation Systems (India) Pvt. Ltd. | VPRCL Toll Plaza, Visakhapatnam</div></div><span class="period">Nov 2017 – Jun 2019</span></div>
+  <ul>
+    <li>Maintained hybrid ETC lanes, AVC, loops, RFID readers, barrier gates and sensors.</li>
+    <li>Maintained Windows Server 2012/2012R2 plaza servers and project hardware.</li>
+    <li>Installed/configured and troubleshot Oracle Database and MySQL 2008.</li>
+    <li>Maintained online CCTV/IP cameras and provided remote support through VNC, Remote Admin and Terminal Services.</li>
+    <li>Supported ETC customers and toll-plaza operations.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-title"><div><h3>Project Engineer (ETC)</h3><div class="company">Tecsidel India Pvt. Ltd. | NHAI Toll Plazas</div></div><span class="period">Aug 2016 – Oct 2017</span></div>
+  <ul>
+    <li>Maintained dedicated ETC lanes, AVC, loops, RFID readers, barrier gates and sensors.</li>
+    <li>Maintained plaza servers, CCTV/IP cameras, software, hardware and TMS software.</li>
+    <li>Provided remote support and customer support for toll-plaza operations.</li>
+    <li>Handled six toll plazas in the AP section, including handheld readers, lane, hardware and network troubleshooting.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-title"><div><h3>Senior Customer Support Engineer</h3><div class="company">Hathway Cable &amp; Datacom Ltd. | Hyderabad</div></div><span class="period">Jul 2008 – Mar 2016</span></div>
+  <ul>
+    <li>Supported customer and corporate internet, LAN/WAN, bandwidth, fiber and VoIP issues.</li>
+    <li>Configured DSL routers, VoIP devices, firewalls, wireless routers, Cisco routers and manageable switches.</li>
+    <li>Configured VLANs and IP routing and supported LAN/MAN network upgrades.</li>
+    <li>Prepared productivity, customer feedback, bandwidth, call-log, MTTR, TRAI, DOT and other reports.</li>
+  </ul>
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="skill-grid">
+  <div class="skill"><strong>ATMS / TMS</strong><span>VMS, VASD, CCTV, VIDS, ECB, MRCS, MET, TTES, ATCC, PTZ, ETC</span></div>
+  <div class="skill"><strong>Networking</strong><span>LAN, WAN, DHCP, DNS, IP switching, Ethernet, Serial, TCP/IP, IPX, NAT</span></div>
+  <div class="skill"><strong>Infrastructure</strong><span>OFC, GSM, ISP management, firewall, routers, switches, VoIP and wireless routers</span></div>
+  <div class="skill"><strong>Systems</strong><span>Windows 9x/2000/XP/Vista/7/8/10/11 and Windows Server 2012R2</span></div>
+  <div class="skill"><strong>Hardware</strong><span>Cisco 800, Huawei H3C S3100, D-Link, Linksys, Netgear, Motorola</span></div>
+  <div class="skill"><strong>Management</strong><span>SLA/DLP, AMC, spares, audits, IE compliance, reporting, claims and vendor coordination</span></div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<table>
+<tr><th>Qualification</th><th>Institution</th><th>Board / University</th></tr>
+<tr><td>MBA – Networking</td><td>Indian Institute Management Studies, Hyderabad (IIBMS)</td><td>IIBMS</td></tr>
+<tr><td>B.Sc. – Electronics &amp; Computers</td><td>Rajiv Gandhi Degree College, Kakinada</td><td>Andhra University</td></tr>
+<tr><td>Intermediate</td><td>Hanumantharaya Junior College, Pithapuram</td><td>Board of Intermediate Education A.P.</td></tr>
+<tr><td>S.S.C</td><td>Blue Star Convent High School, Pithapuram</td><td>Board of Secondary Education A.P.</td></tr>
+</table>
+</section>
+
+<section id="personal">
+<h2>Personal Details</h2>
+<table>
+<tr><th>Date of Birth</th><td>07 November 1987</td><th>Sex</th><td>Male</td></tr>
+<tr><th>Nationality</th><td>Indian</td><th>Languages</th><td>Telugu, Hindi, English</td></tr>
+<tr><th>Place</th><td>Rajahmundry</td><th></th><td></td></tr>
+</table>
+<p class="declaration">I hereby declare that all the above information provided is true to the best of my knowledge.</p>
+</section>
+</main>
+</div>
+
+<footer>Gopinath Munduri · ATMS &amp; TMS · Network &amp; Systems Administration · <a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
